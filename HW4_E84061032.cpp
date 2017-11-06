@@ -3,7 +3,7 @@
 #include<cstdlib>
 #include<ctime>
 using namespace std;
-
+123
 int main()
 {
 	srand(time(0));
@@ -37,12 +37,12 @@ int main()
 		int s4 = sysgena - s1 * 1000 - s2 * 100 - s3 * 10;
 
 		cout << "\n\n\n" << sysgena << "\n\n\n";
-		//	³o£|4µª®×¤£­n¨q¥X¨Ó
+		//	é€™ã„4ç­”æ¡ˆä¸è¦ç§€å‡ºä¾†
 
 		cout << "\nThis is a number guessing program. \nPlease input a 4 digit number, each number cannot be the same. \n";
 		cout << "Input: ";
 		int guess;
-		cin >> guess;                                //guess¨S¨¾§b
+		cin >> guess;                                //guessæ²’é˜²å‘†
 		
 		int g1 = guess / 1000;
 		int g2 = guess / 100 - g1 * 10;
@@ -51,7 +51,7 @@ int main()
 
 		while (guess != sysgena)
 		{
-			//­è­è¦b³o
+			//å‰›å‰›åœ¨é€™
 
 			while (g1 == g2 || g1 == g3 || g1 == g4 || g2 == g3 || g2 == g4 || g3 == g4)
 			{
@@ -66,7 +66,7 @@ int main()
 				g4 = guess - g1 * 1000 - g2 * 100 - g3 * 10;
 			}
 
-			int x = 0, y = 0; //²{¦b¦b³o
+			int x = 0, y = 0; //ç¾åœ¨åœ¨é€™
 
 			if (sysgena != guess && g1 != g2 && g1 != g3 && g1 != g4 && g2 != g3 && g2 != g4 && g3 != g4)
 			{
@@ -89,7 +89,7 @@ int main()
 					y++;
 			}
 
-			cout << "\n" << guess << "¡÷" << x << "A" << y << "B";
+			cout << "\n" << guess << "â†’" << x << "A" << y << "B";
 			x = 0, y = 0;
 			cout << "\n\nTry again.\n" << "Input:";
 			int rereguess;
